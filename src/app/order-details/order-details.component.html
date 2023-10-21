@@ -6,7 +6,7 @@
         <div class="card-body text-sm-start">
           <ul class="list-group">
             <li class="list-group-item">Order Id : {{orderDetails.id}}</li>
-            <li class="list-group-item">Date : {{orderDetails.createdAt | date : 'dd/MM/yyyy'}}</li>
+            <li class="list-group-item">Date : {{orderDetails.createdAt|date:'dd/MM/yyyy'}}</li>
             <li class="list-group-item">Status : {{orderDetails.status}}</li>
             <li class="list-group-item">Customer Id : {{orderDetails.customer.id}}</li>
             <li class="list-group-item">Customer Name : {{orderDetails.customer.name}}</li>
@@ -32,7 +32,7 @@
               <td>{{pi.quantity}}</td>
               <td class="text-end">{{pi.price | number : '.2'}}</td>
               <td class="text-end">{{pi.discount |number: '.2'}}</td>
-              <td class="text-end">{{pi.amount |number: '.2'}}</td>
+              <td class="text-end">{{pi.amount | number:'.2'}}</td>
             </tr>
             <tr class="bg-dark text-white">
               <td colspan="5" class="text-end">Total</td>
