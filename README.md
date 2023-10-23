@@ -19,11 +19,11 @@ To initiate the Consul server, run the following command:<br>
 You can view all the registered services by navigating to:<br>
 `http://localhost:8500/`
 
-![Alt text](URL)
+![Alt text](/micro-services/consul-interface.PNG)
 
 Here are the registered services : 
 
-![Alt text](URL)
+![Alt text](/micro-services/services.PNG)
 
 ### Gateway Service
 
@@ -53,27 +53,47 @@ The snippet I've provided is a Java method utilizing Spring Cloud Gateway with S
 
 ### Customer Service
 
-![Alt text](URL)
+![Alt text](/micro-services/customers.PNG)
 
 ### Inventory Service
 
-![Alt text](URL)
+![Alt text](/micro-services/products.PNG)
 
 ### Order Service
 
-![Alt text](URL)
+![Alt text](/micro-services/orders.PNG)
 
 ### Billing Service
+Below are some common commands used with HashiCorp's Vault:
 
-![Alt text](URL)
+1. **Start the Vault server in development mode:** <br>
+  `vault server -dev`
+
+2. **Set the Vault server address:** <br>
+   `set VAULT_ADDR=http://127.0.0.1:8200`
+3. **Store a secret in Vault:** <br>
+   `vault kv put secret/vault-ms user.username=root user.password=1234`
+4. **Retrieve a secret from Vault:** <br>
+   `vault kv get secret/vault-ms`
+
+this is the web interface of vault :
+   
+![Alt text](/micro-services/vault.PNG)
 
 ## Frontend with Angular
+### All products
 
-![Alt text](URL)
+![Alt text](/micro-services/allProduct.PNG)
 
-![Alt text](URL)
+### All customers
 
-![Alt text](URL)
+![Alt text](/micro-services/allCustomers.PNG)
+
+### Orders of a customer
+
+![Alt text](/micro-services/orders3.PNG)
+
+
 
 
 
